@@ -4,12 +4,12 @@ import sys
 
 def get_file_size(file_path):
     """
-        path - ścieżka do pliku.
-        Funkcja zwraca krotkę (num_bytes, num_words, num_lines, max_line_length), gdzie:
-            num_bytes - ilość bajtów pliku path,
-            num_words - ilość słów w pliku path,
-            num_lines - ilość słów w pliku path,
-            max_line_length - maksymalna długość linii w pliku path
+        path - sciezka do pliku.
+        Funkcja zwraca krotke (num_bytes, num_words, num_lines, max_line_length), gdzie:
+            num_bytes - ilosc bajtow pliku path,
+            num_words - ilosc slow w pliku path,
+            num_lines - ilosc slow w pliku path,
+            max_line_length - maksymalna długosc linii w pliku path
     """
     try:
         num_bytes = os.path.getsize(file_path)
