@@ -21,7 +21,7 @@ def encode(file_name):
                 result += '='
             return result
     except OSError:
-        print("Błędne dane")
+        print("Plik nie istnieje")
 
 
 def decode(file_name):
@@ -41,7 +41,7 @@ def decode(file_name):
                 result += chr(int(bits, base=2))
             return result
     except OSError:
-        print("Błędne dane")
+        print("Plik nie istnieje")
 
 
 if __name__ == "__main__":
@@ -58,3 +58,7 @@ if __name__ == "__main__":
     except IndexError:
         print("Sposób wywołania programu:\n python zad2.py --encode plik_wejściowy plik_wyjściowy\n",
                   "lub\n", "python zad2.py --decode plik_wejściowy plik_wyjściowy", sep='')
+    except OSError:
+        print("Plik nie istnieje")
+    except TypeError:
+        print("Błąd")
